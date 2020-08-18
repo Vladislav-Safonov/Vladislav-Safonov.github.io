@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 header {
   margin-top: 0px !important;
-  background: url(../img/bg1.png) no-repeat fixed center top/cover;
+  background: url(../img/bg1.png) no-repeat center top/cover;
   overflow: hidden;
   height: 800px;
   z-index: -300;
