@@ -1,0 +1,5 @@
+@media screen and (min-width: 1000px) {
+  .menu-block {
+    display: none;
+  }
+}
