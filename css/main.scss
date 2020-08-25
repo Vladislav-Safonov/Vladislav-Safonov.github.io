@@ -103,12 +103,15 @@ header {
   height: 100vh;
   background: url(../img/bg.png) no-repeat center top / cover;
 .header-menu {
+  z-index: 100000;
+  position: fixed;
+  opacity: 1;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  position: absolute;
   height: 100px;
+  transition: all 0.5s;
       .header-menu_items {
         width: 100%;
         display: flex;
@@ -166,12 +169,27 @@ header {
       height: 40px;
       width: 40px;
       margin-bottom: 30/775 * 100%;
+      transition: all 1s;
       .header-vshape_img {
         display: block;
       }
     }
+     .vshape-link:hover {
+      height: 60px;
+      margin-bottom: 20/775 * 100%;
+      transition: all 0.8s;
+    }
   }
 }
+
+
+/*hide menu in js*/
+.hide-menu {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+/*---------------*/
 
 .section1 {
   .section1-text {
@@ -179,7 +197,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 125px;
+    margin-top: 175px;
     .section1-text_title {
       font-family: "OpenSans-Bold", sans-serif;
       font-size: 1.667em;
@@ -199,7 +217,7 @@ header {
 
 .section2 {
   .section2-blocks {
-    margin-top: 110px;
+    margin-top: 125px;
     .section2-block {
       display: flex;
       flex-direction: column;
@@ -227,7 +245,7 @@ header {
 }
 
 .section3 {
-  margin-top: 124px;
+  margin-top: 175px;
   .section3-text {
     width: 100%;
     display: flex;
@@ -248,7 +266,12 @@ header {
   .section3-block-works {
     margin-top: 60px;
     margin-bottom: 140px;
-    .container { max-width: 1170px; }
+    .container {
+      max-width: 1170px;
+      .row {
+        justify-content: center;
+      }
+    }
   }
 }
 
@@ -258,7 +281,7 @@ header {
   height: 370px;
   overflow: hidden;
   position: relative;
-  & img { position: absolute; }
+  & img { position: absolute; margin: 0 auto; background-size: cover;}
   .item-text {
     background: rgb(0,0,0,0.8);
     position: absolute;
@@ -363,6 +386,14 @@ header {
         background-color: #ffffff;
         color: #000000;
         font-size: 1.111em;
+        transition: all 0.3s;
+      }
+      button:active, button:focus {
+      outline: none !important;
+    }
+      button:hover {
+        background-color: #ebebeb;
+        transition: all 0.3s;
       }
     }
   }
@@ -375,16 +406,6 @@ footer {
   margin-top: 50px;
   padding-bottom: 50px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

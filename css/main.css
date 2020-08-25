@@ -95,12 +95,15 @@ header {
   background: url(../img/bg.png) no-repeat center top/cover;
 }
 header .header-menu {
+  z-index: 100000;
+  position: fixed;
+  opacity: 1;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  position: absolute;
   height: 100px;
+  transition: all 0.5s;
 }
 header .header-menu .header-menu_items {
   width: 100%;
@@ -162,17 +165,31 @@ header .header-vshape_block .vshape-link {
   height: 40px;
   width: 40px;
   margin-bottom: 3.8709677419%;
+  transition: all 1s;
 }
 header .header-vshape_block .vshape-link .header-vshape_img {
   display: block;
 }
+header .header-vshape_block .vshape-link:hover {
+  height: 60px;
+  margin-bottom: 2.5806451613%;
+  transition: all 0.8s;
+}
 
+/*hide menu in js*/
+.hide-menu {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+/*---------------*/
 .section1 .section1-text {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 125px;
+  margin-top: 175px;
 }
 .section1 .section1-text .section1-text_title {
   font-family: "OpenSans-Bold", sans-serif;
@@ -190,7 +207,7 @@ header .header-vshape_block .vshape-link .header-vshape_img {
 }
 
 .section2 .section2-blocks {
-  margin-top: 110px;
+  margin-top: 125px;
 }
 .section2 .section2-blocks .section2-block {
   display: flex;
@@ -215,7 +232,7 @@ header .header-vshape_block .vshape-link .header-vshape_img {
 }
 
 .section3 {
-  margin-top: 124px;
+  margin-top: 175px;
 }
 .section3 .section3-text {
   width: 100%;
@@ -241,6 +258,9 @@ header .header-vshape_block .vshape-link .header-vshape_img {
 .section3 .section3-block-works .container {
   max-width: 1170px;
 }
+.section3 .section3-block-works .container .row {
+  justify-content: center;
+}
 
 .section3-block-works_item {
   padding: 15px;
@@ -251,6 +271,8 @@ header .header-vshape_block .vshape-link .header-vshape_img {
 }
 .section3-block-works_item img {
   position: absolute;
+  margin: 0 auto;
+  background-size: cover;
 }
 .section3-block-works_item .item-text {
   background: rgba(0, 0, 0, 0.8);
@@ -355,6 +377,14 @@ header .header-vshape_block .vshape-link .header-vshape_img {
   background-color: #ffffff;
   color: #000000;
   font-size: 1.111em;
+  transition: all 0.3s;
+}
+.section4 .block-button button:active, .section4 .block-button button:focus {
+  outline: none !important;
+}
+.section4 .block-button button:hover {
+  background-color: #ebebeb;
+  transition: all 0.3s;
 }
 
 footer {
@@ -364,4 +394,36 @@ footer {
   font-size: 1.111em;
   margin-top: 50px;
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .header-menu .container {
+    height: 100%;
+  }
+
+  .header-menu_items {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section1-text {
+    margin-top: 110px !important;
+  }
+
+  .section2-block {
+    margin-top: 80px;
+  }
+
+  .section2-blocks {
+    margin-top: 45px !important;
+  }
+
+  .section3 {
+    margin-top: 110px;
+  }
 }

@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="header-menu">
 			<div class="container">
 				<div class="header-menu_items">
@@ -17,11 +17,11 @@
 						safonov
 					</div>
 					<div class="header-menu_nav">
-						<nav>
-							<a href="#">Главная</a>
-							<a href="#">Обо мне</a>
-							<a href="#">Портфолио</a>
-							<a href="#">Связь со мной</a>
+						<nav id="nav">
+							<a href="#header">Главная</a>
+							<a href="#section1">Обо мне</a>
+							<a href="#section3">Портфолио</a>
+							<a href="#section4">Связь со мной</a>
 						</nav>
 					</div>
 				</div>
@@ -33,12 +33,12 @@
 			</div>
 		</div>
 	<div class="header-vshape_block">
-		<a href="#" class="vshape-link"><div class="header-vshape_img">
+		<a href="#section1" class="vshape-link"><div class="header-vshape_img">
 			<img src="img/v-shape.png">
 		</div></a>
 	</div>
 	</header>
-	<section class="section1">
+	<section class="section1" id="section1">
 		<div class="section1-text">
 			<div class="section1-text_title">
 				Обо мне
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section3">
+	<section class="section3" id="section3">
 		<div class="section3-text">
 			<div class="section3-text_title">
 				Портфолио
@@ -138,7 +138,7 @@
 			<div class="section4_text-title">
 			Свяжитесь со мной
 			</div>
-			<div class="section4_main-text">
+			<div class="section4_main-text"  id="section4">
 				Если вы хотите воспользоваться моими услугами - свяжитесь с помощью контактной формы внизу, либо напишите на почту, которая указана ниже.
 			</div>
 			<div class="section4_mail-ico">
@@ -150,11 +150,6 @@
 			<form class="contact-form">
 				<div class="container">
 					<div class="row">
-					<!-- Hidden Required Fields -->
-					<input type="hidden" name="project_name" value="Портфолио">
-					<input type="hidden" name="admin_email" value="wlad144779@gmail.com">
-					<input type="hidden" name="form_subject" value="Обращение с портфолио">
-					<!-- END Hidden Required Fields -->
 					<div class="block-form col-md-6">
 						<input type="text" name="Name" placeholder="Your Name">
 					</div>

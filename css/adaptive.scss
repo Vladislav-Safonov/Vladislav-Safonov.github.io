@@ -1,0 +1,11 @@
+@media screen and (max-width: 992px) {
+	.header-menu .container { height: 100%; }
+	.header-menu_items {height: 100%; flex-direction: column; align-items: center; justify-content: space-between; padding-top: 20px; padding-bottom: 20px;}
+}
+
+@media screen and (max-width: 767px) {
+	.section1-text { margin-top: 110px !important; }
+	.section2-block { margin-top: 80px; }
+	.section2-blocks { margin-top: 45px !important; }
+	.section3 { margin-top: 110px; }
+}
