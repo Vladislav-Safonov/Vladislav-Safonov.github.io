@@ -11,7 +11,7 @@ scrollPrev = 0;
 $(window).scroll(function() {
 	var scrolled = $(window).scrollTop();
 
-		if(scrolled > 100 && scrolled > scrollPrev) {
+		if(scrolled > 10 && scrolled > scrollPrev) {
 			$(headerMenu).addClass('hide-menu');
 		} else {
 			$(headerMenu).removeClass('hide-menu');

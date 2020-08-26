@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   height: 100vh;
   background: url(../img/bg.png) no-repeat center top / cover;
+  overflow: hidden;
 .header-menu {
   z-index: 100000;
   position: fixed;
@@ -281,7 +282,7 @@ header {
   height: 370px;
   overflow: hidden;
   position: relative;
-  & img { position: absolute; margin: 0 auto; background-size: cover;}
+  & img { position: absolute;}
   .item-text {
     background: rgb(0,0,0,0.8);
     position: absolute;

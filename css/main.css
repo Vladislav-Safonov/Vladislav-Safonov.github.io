@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   height: 100vh;
   background: url(../img/bg.png) no-repeat center top/cover;
+  overflow: hidden;
 }
 header .header-menu {
   z-index: 100000;
@@ -271,8 +272,6 @@ header .header-vshape_block .vshape-link:hover {
 }
 .section3-block-works_item img {
   position: absolute;
-  margin: 0 auto;
-  background-size: cover;
 }
 .section3-block-works_item .item-text {
   background: rgba(0, 0, 0, 0.8);
@@ -425,5 +424,60 @@ footer {
 
   .section3 {
     margin-top: 110px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-menu_nav {
+    width: 400px !important;
+  }
+  .header-menu_nav nav {
+    font-size: 0.9em !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-text {
+    font-size: 1em !important;
+  }
+  .header-text span {
+    font-size: 3em !important;
+  }
+
+  .header-menu_nav {
+    width: 400px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-menu_nav {
+    width: 340px !important;
+  }
+  .header-menu_nav nav {
+    font-size: 0.85em !important;
+  }
+
+  .section3-block-works_item {
+    width: 300px;
+    height: 300px;
+  }
+  .section3-block-works_item img {
+    margin-left: -48px !important;
+  }
+
+  .block-button button {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .header-menu_nav {
+    width: 310px !important;
+  }
+  .header-menu_nav nav {
+    font-size: 0.81em !important;
+  }
+
+  .header-text {
+    font-size: 0.9em !important;
+  }
+  .header-text span {
+    font-size: 2.7em !important;
   }
 }

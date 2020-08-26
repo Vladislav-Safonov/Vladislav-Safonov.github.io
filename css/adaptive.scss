@@ -9,3 +9,58 @@
 	.section2-blocks { margin-top: 45px !important; }
 	.section3 { margin-top: 110px; }
 }
+
+@media screen and (max-width: 600px) {
+	.header-menu_nav {
+	 width: 400px !important; 
+	 	nav {
+	 		font-size: 0.9em !important;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.header-text {
+		font-size: 1em !important;
+		span {
+			font-size: 3em !important;
+		}
+	 }
+	 .header-menu_nav {
+	 width: 400px !important; 
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.header-menu_nav {
+	 width: 340px !important; 
+	 	nav {
+	 		font-size: 0.85em !important;
+		}
+	}
+	.section3-block-works_item {
+		width: 300px;
+		height: 300px; 
+		img { margin-left: -48px !important; }
+	}
+	.block-button {
+		button {
+			width: 100% !important;
+		}
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.header-menu_nav {
+	 width: 310px !important; 
+	 	nav {
+	 		font-size: 0.81em !important;
+		}
+	}
+	.header-text {
+		font-size: 0.9em !important;
+		span {
+			font-size: 2.7em !important;
+		}
+	 }
+}
