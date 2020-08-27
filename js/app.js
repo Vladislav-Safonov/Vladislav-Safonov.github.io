@@ -31,7 +31,6 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top-100}, 1300);
 	});
 });
-/*------------------*/
 
 $(document).ready(function(){
 	$('.vshape-link').click(function(event){
@@ -41,8 +40,9 @@ $(document).ready(function(){
 		$('body, html').animate({scrollTop: top-100}, 1300);
 	});
 });
+/*------------------*/
 
-
+// parallax
 $(window).scroll(function(){
 	var scrolled = $(this).scrollTop();
 
@@ -50,3 +50,5 @@ $(window).scroll(function(){
 		"transform" : "translate(0%, "+ scrolled/33 +"%"
 	});
 })
+
+//------------
