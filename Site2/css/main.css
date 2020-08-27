@@ -109,6 +109,11 @@ header {
 .navbar ul a li {
   margin-left: 72px;
   color: #afc67b;
+  transition: all 0.3s;
+}
+.navbar ul a li:hover {
+  color: #7f944e;
+  transition: all 0.3s;
 }
 
 .block1_header {
@@ -147,6 +152,11 @@ header {
   font-family: "montserrat-reg", sans-serif;
   width: 300px;
   height: 95px;
+  transition: all 0.3s;
+}
+.block1_header .block1_header_items .block1_header_items_button:hover {
+  background-color: rgba(77, 87, 55, 0.6);
+  transition: all 0.3s;
 }
 
 .section1 {
@@ -484,6 +494,11 @@ header {
   position: relative;
   padding-bottom: 3px;
   border-bottom: 5px solid #afc67b;
+  transition: all 0.5s;
+}
+.section8 .section8_product-card .product-card_link b:hover {
+  border-bottom: 5px solid #7f944e;
+  transition: all 0.3s;
 }
 
 .section9 {
@@ -778,81 +793,6 @@ header {
   .section5_block-menu_item {
     padding-left: 25px !important;
     padding-right: 25px !important;
-  }
-}
-@media screen and (min-width: 1400px) {
-  header {
-    height: 1000px !important;
-  }
-
-  .section1_block_text {
-    font-size: 1.225em !important;
-  }
-
-  .section2_blocks_text {
-    font-size: 1.3em !important;
-  }
-
-  .block_menu_text-title {
-    font-size: 2em !important;
-  }
-
-  .block_menu_main-text {
-    font-size: 1.1em !important;
-  }
-
-  .section4_block-text_title {
-    font-size: 2.8em !important;
-  }
-
-  .section4_block-text_main {
-    font-size: 1.4em !important;
-  }
-
-  .section5_block-menu_item .item_text-title {
-    font-size: 1.8em !important;
-  }
-
-  .section5_block-menu_item .item_main-text {
-    font-size: 1.2em !important;
-  }
-
-  .section6_input-title {
-    font-size: 1.2em !important;
-    width: 300px !important;
-  }
-
-  .section6_input input {
-    width: 300px !important;
-    height: 40px !important;
-    padding-left: 10px !important;
-    font-size: 1.2em;
-  }
-
-  .section6_button button {
-    width: 300px !important;
-    height: 40px !important;
-    font-size: 1.2em !important;
-  }
-
-  .section8 .container {
-    max-width: 1300px !important;
-  }
-
-  .section8_product-card .product-card_date {
-    font-size: 1em !important;
-  }
-
-  .section8_product-card .product-card_title {
-    font-size: 1.1em !important;
-  }
-
-  .section8_product-card .product-card_text {
-    font-size: 1.05em !important;
-  }
-
-  .section8_product-card .product-card_link b {
-    font-size: 1em !important;
   }
 }
 @media screen and (min-width: 1850px) {

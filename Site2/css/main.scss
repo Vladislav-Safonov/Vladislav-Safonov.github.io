@@ -116,6 +116,11 @@ header {
 			li {
 				margin-left: 72px;
 				color: #afc67b;
+				transition: all 0.3s;
+			}
+			li:hover {
+				color: #7f944e;
+				transition: all 0.3s;
 			}
 		}
 	}
@@ -155,6 +160,11 @@ header {
 			font-family: "montserrat-reg", sans-serif;
 			width: 300px;
 			height: 95px;
+			transition: all 0.3s;
+		}
+		.block1_header_items_button:hover {
+			background-color: rgb(77, 87, 55, 0.6);
+			transition: all 0.3s;
 		}
 	}
 }
@@ -491,7 +501,12 @@ header {
 				color: #4f4e4e;
 				position: relative;
 				padding-bottom: 3px;
-				border-bottom: 5px solid #afc67b; 
+				border-bottom: 5px solid #afc67b;
+				transition: all 0.5s; 
+			}
+			& b:hover {
+				border-bottom: 5px solid #7f944e;
+				transition: all 0.3s;
 			}
 		}
 	}
