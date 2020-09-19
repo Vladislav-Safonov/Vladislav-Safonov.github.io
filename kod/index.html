@@ -6,12 +6,31 @@
 </head>
 <body>
 	<div class="">
+		Задача 2.1 (Высокий уровень)<br><br><br>
 		import math<br><br>
-		x = float(input("Введите значение x = "))<br><br>
 
-		y = math.sinh(x)*math.tan(x+1)-(math.tan(2+math.sinh(x-1)))**2<br><br>
+		x = float(input('Введите x = '))<br>
+		y = float(input('Введите y = '))<br>
 
-		print("Значение функции y = " + str(y)) <br><br><br><br>
+		if (math.sqrt(x**2+y**2)<=2) and (x<0 and y>=-(x)**2+2) or (math.sqrt(x**2+y**2)<=2) and (x>0 and y>=-(x)**2+2):<br>
+    		print('Принадлежит')<br>
+		else:<br>
+    		print('Не принадлежит')<br><br><br><br>
+
+    	Задача 2.2 (Высокий уровень)<br><br><br>
+    	dateNow = int(input('Введите число от 1 до 31 = '))<br><br>
+
+		if (dateNow<=10):<br>
+    		if (dateNow==10):<br>
+        		print('Сегодня новолуние, а полнолуние будет - ', (27+28) % 31, ' сентября')<br>
+   		else: print('Ближайшее новолуние - ', (27+14) % 31, ' сентября')<br>
+		elif (10< dateNow<=24):<br>
+    		if (dateNow==24):<br>
+        		print('Сегодня полнолуние, а новолуние будет - ', (27+42) % 31, ' октября')<br>
+    		else: print('Ближайшее полнолуние - ', (27+28) % 31, ' сентября')<br>
+			elif(24< dateNow<=31):<br>
+    			print('Ближайшее новолуние - ', (27+42) % 30, ' октября')<br>
+			else: print('Неверное значение')<br><br><br><br>
 	</div>
 	<a href="https://drive.google.com/file/d/12hGWctCwP8v0QvpRqtguupNzvyhAhYg1/view?usp=sharing">Скачать файл</a>
 </body>
