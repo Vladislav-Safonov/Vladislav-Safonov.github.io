@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div class="">
-		Задача 3.2 (Высокий уровень)<br><br><br>
+		Задача 3.2 (Высокий уровень)<br><br>
 		num = 1000
 
 		while 1000<=num<9999:
@@ -16,10 +16,10 @@
     		c=int(((num/10)/10)%10)
     		d=int(num/1000)
     		if (a!=b) and (a!=c) and (a!=d) and (b!=c) and (b!=d) and (c!=d):
-        		print(str(a)+str(b)+str(c)+str(d))
+        		print(str(a)+str(b)+str(c)+str(d))<br><br><br>
 
 
-    	Задача 3.4 (Высокий уровень)<br><br><br>
+    	Задача 3.4 (Высокий уровень)<br><br>
     	import math
 
 		x=3
@@ -35,7 +35,42 @@
         	k+=1
     	print('y = ', y)
     	print(' ')
-    	x+=0.5
+    	x+=0.5<br><br><br>
+    	
+    	Задача 3.1 (Высокий уровень)<br><br>
+    	import math
+
+		x = int(input('Введите x = '))
+		k = int(input('Введите k = '))
+
+		t = 2
+		i = 1
+		func1=1
+		func2=0
+
+		for i in range(t,k+1):
+    		if t!=3:
+        		func1 = (t*(x**t))/(t-3) * func1
+        		t+=1
+    		else:
+        		t+=1
+    	for n in range(i,t):
+        	if i!=2 or i!=7:
+            	func2 += (i-2)/(i-7)
+            	i+=1
+        	else:
+            	i+=1
+		u = func1*func2
+		print(u)<br><br><br>
+    	
+    	Задача 3.3 (Высокий уровень)<br><br>
+    	n = int(input('Введите кол-во повторений = '))
+		x = int(input('Введите значение x = '))
+		s=0
+		for i in range(1, n+1,1):
+    		s+=(x-((x**3)/3)+((x**5)/5)-((x**7)/7))
+    		i+=1
+		print(s)<br><br><br>
 	</div>
 	<a href="https://drive.google.com/file/d/12hGWctCwP8v0QvpRqtguupNzvyhAhYg1/view?usp=sharing">Скачать файл</a>
 </body>
