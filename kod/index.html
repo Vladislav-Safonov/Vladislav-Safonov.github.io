@@ -6,27 +6,46 @@
 </head>
 <body>
 	<div class="">
-		import math
+mass1 = []
+mass2 = []
+mass3 = []
+mass4 = []  # нечетные числа из первого массива
+mass5 = []  # нечетные числа из второго массива
+mass6 = []  # нечетные числа из третьего массива
+kol = int(input('Введите длину массивов (не более 11) = '))
+for i in range(kol):
+    zn = int(input('Введите значение в первый массив = '))
+    mass1.append(zn)
+for c in range(kol):
+    zn2 = int(input('Введите значение во второй массив = '))
+    mass2.append(zn2)
+print('Первый массив = ', mass1)
+print('Второй массив = ', mass2)
 
-		def func(a):
-    		F = math.e**((-a)**2+9*a-1)
-    		return F
+for j in range(kol):
+    zn = ((mass1[j])**2)*((mass2[j])**2)
+    mass3.append(zn)
+print('Третий массив = ', mass3)
 
-		x = 2.54
-		z = 2.41
-		u = 1.96
+for j in mass1:
+    if j%2!=0:
+        mass4.append(j)
+        nech1 = len(mass4)
+print('Кол-во нечетных элементов из первого массива = ', nech1)
 
-		y = 1+func(x)/(1+func(z)/(1+func(u)))
+for j in mass2:
+    if j%2!=0:
+        mass5.append(j)
+        nech2 = len(mass5)
+print('Кол-во нечетных элементов из первого массива = ', nech2)
 
-		print('y с первыми значениями равен = ',y)
+for j in mass3:
+    if j%2!=0:
+        mass6.append(j)
+        nech3 = len(mass6)
+print('Кол-во нечетных элементов из первого массива = ', nech3)
+        
 
-		x1 = 4.08
-		z1 = 1.95
-		u1 = 2.25
-
-		y = 1+func(x1)/(1+func(z1)/(1+func(u1)))
-
-		print('y со вторыми значениями равен = ',y)
 	</div>
 	<a href="https://drive.google.com/file/d/12hGWctCwP8v0QvpRqtguupNzvyhAhYg1/view?usp=sharing">Скачать файл</a>
 </body>
