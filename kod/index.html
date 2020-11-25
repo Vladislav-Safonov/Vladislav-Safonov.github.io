@@ -6,44 +6,65 @@
 </head>
 <body>
 	<div class="">
-mass1 = []
-mass2 = []
-mass3 = []
-mass4 = []  # нечетные числа из первого массива
-mass5 = []  # нечетные числа из второго массива
-mass6 = []  # нечетные числа из третьего массива
-kol = int(input('Введите длину массивов (не более 11) = '))
-for i in range(kol):
-    zn = int(input('Введите значение в первый массив = '))
-    mass1.append(zn)
-for c in range(kol):
-    zn2 = int(input('Введите значение во второй массив = '))
-    mass2.append(zn2)
-print('Первый массив = ', mass1)
-print('Второй массив = ', mass2)
+<br><br>		
+Задание 5.1<br>
+<br>
+import random<br>
+n = int(input('Введите количество строк = '))<br>
+m = int(input('Введите количество стобцов = '))<br>
+a = [[random.randrange(0,10) for j in range(m)] for i in range(n)]<br>
+nm = []<br>
+print('Дана матрица: ')<br>
+for row in a:<br>
+    print(' '.join([str(elem) for elem in row]))<br>
+def am(nm):<br>
+    nm = [sum(row[i] for row in a) for i in range(len(a[0]))]<br>
+    print('Норма матрицы ||Am|| = ', nm)<br>
+def ai(nm):<br>
+    nm = [sum(row) for row in a]<br>
+    print('Норма матрицы ||Ai|| = ', nm)<br>
+am(nm)<br>
+ai(nm)
 
-for j in range(kol):
-    zn = ((mass1[j])**2)*((mass2[j])**2)
-    mass3.append(zn)
-print('Третий массив = ', mass3)
+<br><br><br>
 
-for j in mass1:
-    if j%2!=0:
-        mass4.append(j)
-        nech1 = len(mass4)
-print('Кол-во нечетных элементов из первого массива = ', nech1)
+Задание 6.1<br><br>
 
-for j in mass2:
-    if j%2!=0:
-        mass5.append(j)
-        nech2 = len(mass5)
-print('Кол-во нечетных элементов из первого массива = ', nech2)
+mass1 = []<br>
+mass2 = []<br>
+mass3 = []<br>
+kol = int(input('Введите длину массивов (не более 11) = '))<br>
+for i in range(kol):<br>
+    zn = int(input('Введите значение в первый массив = '))<br>
+    mass1.append(zn)<br>
+for c in range(kol):<br>
+    zn2 = int(input('Введите значение во второй массив = '))<br>
+    mass2.append(zn2)<br>
+print('Первый массив = ', mass1)<br>
+print('Второй массив = ', mass2)<br>
 
-for j in mass3:
-    if j%2!=0:
-        mass6.append(j)
-        nech3 = len(mass6)
-print('Кол-во нечетных элементов из первого массива = ', nech3)
+for j in range(kol):<br>
+    zn = ((mass1[j])**2)*((mass2[j])**2)<br>
+    mass3.append(zn)<br>
+print('Третий массив = ', mass3)<br>
+
+def sch():<br>
+    k1=0<br>
+    k2=0<br>
+    k3=0<br>
+    for j in mass1:<br>
+        if j%2!=0:<br>
+            k1+=1<br>
+    print('Количество нечётных чисел в первом массиве = ', k1)<br>
+    for j in mass2:<br>
+        if j%2!=0:<br>
+            k2+=1<br>
+    print('Количество нечётных чисел во втором массиве = ', k2)<br>
+    for j in mass3:<br>
+        if j%2!=0:<br>
+            k3+=1<br>
+    print('Количество нечётных чисел в третьем массиве = ', k3)<br>
+sch()<br>
         
 
 	</div>
