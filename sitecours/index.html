@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/jquery-3.6.0.min.js"></script>
@@ -19,14 +19,14 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">О сервисе</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">О сервисе</a></li>
+            <li><a href="">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="shipping-button"><div class="shipping">
-            <img src="img/ship.svg" alt="" width="22px", height="20px">
+        <a href="" class="shipping-button"><div class="shipping">
+            <img src="img/ship.svg" alt="" width="22px" ,="" height="20px">
         </div></a>
       </div>
       <img src="img/dogbg.png" class="header__bigImgDog" alt="">
@@ -54,25 +54,26 @@
     <div class="container">
       <nav class="select-items">
         <p>Для кого:</p>
+        <a href="javascript:void(0);" data-filter="all">Все товары</a>
         <ul class="select-list">
           <li>
               <a href="javascript:void(0);">Для собак:<img src="img/select_arrow.svg" alt=""></a>
               <ul class="options">
-                  <li><a href="javascript:void(0);">Корм</a></li>
-                  <li><a href="javascript:void(0);">Средства для ухода</a></li>
-                  <li><a href="javascript:void(0);">Игрушки</a></li>
-                  <li><a href="javascript:void(0);">Для комфорта</a></li>
-                  <li><a href="javascript:void(0);">Витамины</a></li>
+                  <li><a href="javascript:void(0);" data-filter="dog-food">Корм</a></li>
+                  <li><a href="javascript:void(0);" data-filter="dog-care">Средства для ухода</a></li>
+                  <li><a href="javascript:void(0);" data-filter="dog-toys">Игрушки</a></li>
+                  <li><a href="javascript:void(0);" data-filter="dog-comfort">Для комфорта</a></li>
+                  <li><a href="javascript:void(0);" data-filter="dog-vitamins">Витамины</a></li>
               </ul>
           </li>
           <li>
-              <a href="javascript:void(0);">Для кошек:<img src="img/select_arrow.svg" alt="" srcset=""></a>
+              <a href="">Для кошек:<img src="img/select_arrow.svg" alt="" srcset=""></a>
               <ul class="options">
-                <li><a href="javascript:void(0);">Корм</a></li>
-                <li><a href="javascript:void(0);">Средства для ухода</a></li>
-                <li><a href="javascript:void(0);">Игрушки</a></li>
-                <li><a href="javascript:void(0);">Для комфорта</a></li>
-                <li><a href="javascript:void(0);">Витамины</a></li>
+                <li><a href="" data-filter="cat-food">Корм</a></li>
+                <li><a href="" data-filter="cat-care">Средства для ухода</a></li>
+                <li><a href="" data-filter="cat-toys">Игрушки</a></li>
+                <li><a href="" data-filter="cat-comfort">Для комфорта</a></li>
+                <li><a href="" data-filter="cat-vitamins">Витамины</a></li>
               </ul>
           </li>
         </ul>
@@ -83,18 +84,18 @@
     <div class="carousel">
       <div class="container">
         <div class="slide-window">
-          <div class="slide-wrapper" style="width: 400%;">
+          <div class="slide-wrapper" style="width: 400%; left: -2858.22px;">
             <div class="slide">
-              <a href="#" target="_blank">
+              <a href="" target="_blank">
                 <div class="slide-image" style="background-image: url(img/saledog.jpg)">
                 </div>
                 <div class="slide-caption">
-                  <h2></p>
-                </div>
+                  <h2><p></p>
+                </h2></div>
               </a>
             </div>
             <div class="slide">
-              <a href="#" target="_blank">
+              <a href="" target="_blank">
                 <div class="slide-image" style="background-image: url(img/salecat.jpg)">
                 </div>
                 <div class="slide-caption">
@@ -104,7 +105,7 @@
               </a>
             </div>
             <div class="slide">
-              <a href="#" target="_blank">
+              <a href="" target="_blank">
                 <div class="slide-image" style="background-image: url(img/salebird.jpg)">
                 </div>
                 <div class="slide-caption">
@@ -114,7 +115,7 @@
               </a>
             </div>
             <div class="slide">
-              <a href="#" target="_blank">
+              <a href="" target="_blank">
                 <div class="slide-image" style="background-image: url(img/saledelivery.jpg)">
                 </div>
                 <div class="slide-caption">
@@ -133,7 +134,7 @@
               <div class="slide-control-line"></div>
               <div class="slide-control-line"></div>
             </div>
-          </div>
+          <div class="slide-control-btn"><ul><li><a class=""></a></li><li><a class=""></a></li><li><a class="active"></a></li><li><a class=""></a></li></ul></div></div>
         </div>
       </div>  
     </div>
@@ -143,300 +144,300 @@
       <div class="block__items-gallery">
         <p class="block__items-gallery_main-text">Все товары</p>
         <div class="items-gallery__wrap">
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-food">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
-            <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <p class="item__name">Корм для котов FRISKAS</p>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-food">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-food">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-care">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-care">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
-            <div class="item__buttons">
-              <img src="img/minus_arrow.svg" class="item__button_minus" class="item__button_minus" alt="">
-              <button class="item__button_add">Добавить</button>
-              <img src="img/plus_arrow.svg" class="item__button_plus" class="item__button_plus" alt="">
-            </div>
-          </div>
-          <div class="items-gallery__item">
-            <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
-            <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-care">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-toys">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item">
+          <div class="items-gallery__item" data-cat="dog-toys">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item" data-cat="dog-toys">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="dog-comfort">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="dog-comfort">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="dog-comfort">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="dog-vitamins">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="dog-vitamins">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="dog-vitamins">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-food">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-food">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-food">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-care">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-care">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-care">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-toys">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-toys">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-toys">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-comfort">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-comfort">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-comfort">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-vitamins">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
               <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
             </div>
           </div>
-          <div class="items-gallery__item gallery__items_see-all_none">
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-vitamins">
             <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
             <p class="item__name">Корм для котов Whiskas</p>
-            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled><p>*</p><input type="text" value="23" class="item__value-price" disabled><p>₽</p></div>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
+            <div class="item__buttons">
+              <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
+              <button class="item__button_add">Добавить</button>
+              <img src="img/plus_arrow.svg" class="item__button_plus" alt="">
+            </div>
+          </div>
+          <div class="items-gallery__item gallery__items_see-all_none" data-cat="cat-vitamins">
+            <div class="item__img"><img src="img/whiskas.png" alt="" srcset=""></div>
+            <p class="item__name">Корм для котов Whiskas</p>
+            <div class="items__value-price"><input type="text" value="1" class="item__value-number" disabled=""><p>*</p><input type="text" value="23" class="item__value-price" disabled=""><p>₽</p></div>
             <div class="item__buttons">
               <img src="img/minus_arrow.svg" class="item__button_minus" alt="">
               <button class="item__button_add">Добавить</button>
@@ -449,10 +450,10 @@
         <p class="see-all__text">Показать все</p><p class="see-all__text gallery__items_see-all_hide">Скрыть</p></a>
       </div>
     </div>
-  </section>
+  </div></section>
   <div class="fixed-block__total-price fixed-block__total-price_none">
     <p>Итого:</p>
-    <div class="total-price"><p>₽</p><input type="text" value="0" class="bottom-block__total-price" disabled><a href="#" class="shipping-bottom">Перейти в корзину</a><div class="total-price__hide">Скрыть</div></div>
+    <div class="total-price"><p>₽</p><input type="text" value="0" class="bottom-block__total-price" disabled=""><a href="" class="shipping-bottom">Перейти в корзину</a><div class="total-price__hide">Скрыть</div></div>
   </div>
 
   <section class="section__form-feedback">
@@ -466,6 +467,15 @@
       <p>Корзина</p>
       <img src="img/close-button.svg" alt="Скрыть" width="30px" height="30px" class="shipping-window__close-button">
     </div>
+    <div class="shipping-window__items">
+
+    </div>
+    <div class="shipping-window__bottom-items">
+      <p class="bottom-items__price">Итого: ₽<input type="text" value="0" disabled=""></p>
+      <a href="http://127.0.0.1:5500/" class="clear-shipping-window">Очистить корзину</a>
+      <p class="bottom-items__promo">Введите промокод:<input type="text"></p>
+      <button>Оплатить</button>
+    </div>
   </div>
   <script src="js/select.js"></script>
   <script src="js/carousel.js"></script>
@@ -473,5 +483,4 @@
   <script src="js/shopping_card.js"></script>
   <script src="js/bottom-shipping.js"></script>
   <script src="js/shipping-window.js"></script>
-</body>
-</html>
+</body></html>

@@ -975,7 +975,7 @@ header .container {
 
 .shipping-window {
   position: fixed;
-  z-index: 4 !important;
+  z-index: 10 !important;
   width: 80%;
   height: 80%;
   top: 10%;
@@ -1016,9 +1016,10 @@ header .container {
 .shipping-window_shadow {
   position: absolute;
   display: none;
+  position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 2 !important;
+  z-index: 6 !important;
   top: 0;
   left: 0;
   right: 0;
@@ -1027,6 +1028,103 @@ header .container {
 }
 
 .shipping-window_hide {
+  display: none !important;
+}
+
+.shipping-window .shipping-window__items {
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.shipping-window .shipping-window__items .shipping-window__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "MontserratSemiBold", sans-serif;
+  height: 70px;
+}
+
+.shipping-window .shipping-window__items .shipping-window__item .shipping-window__item-img {
+  height: 100%;
+}
+
+.shipping-window .shipping-window__items .shipping-window__item .shipping-window__item-img img {
+  height: 100%;
+}
+
+.shipping-window .shipping-window__bottom-items {
+  bottom: 0;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5em;
+  font-family: "MontserratSemiBold", sans-serif;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.shipping-window .shipping-window__bottom-items .bottom-items__price input {
+  margin-left: 10px;
+  width: 100px;
+  font-family: "MontserratBold", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+.shipping-window .shipping-window__bottom-items .bottom-items__promo input {
+  margin-left: 15px;
+  width: 105px;
+  padding-left: 15px;
+  border: 3px solid #FF8A00;
+  border-radius: 20px;
+}
+
+.shipping-window .shipping-window__bottom-items a {
+  font-size: 0.7em;
+}
+
+.shipping-window .shipping-window__bottom-items button {
+  border: none;
+  color: #fff;
+  background: #FF8A00;
+  border-radius: 20px;
+  padding: 7px 15px;
+}
+
+.shipping-window_shadow {
+  position: absolute;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9 !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.shipping-window_hide {
+  display: none !important;
+}
+
+.item_hide {
   display: none !important;
 }
 /*# sourceMappingURL=main.css.map */
