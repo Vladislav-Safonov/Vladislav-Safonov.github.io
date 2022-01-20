@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шифрование</title>
+</head>
+<body>
+  <div class="container">
+    <div class="block">
+      <div class="block__items">
+        <div class="items__code">
+          <input type="text" id="inputCode" value="">
+          <button id="buttonCode">Зашифровать</button>
+        </div>
+        <div class="items__code">
+          <input type="text" id="inputDecode">
+          <button id="buttonDecode">Расшифровать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    buttonCode.onclick = function() {
+      let letters = ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я", ' '];
+      let getValueInputCode = document.getElementById("inputCode").value;
+      let valueInputCodeLower = getValueInputCode.toLowerCase();
+      let textLettersArray = valueInputCodeLower.split('');
+      let codeArray = [];
+      for (let i=0; i<textLettersArray.length; i++) {
+        for (let j=0; j<letters.length; j++) {
+          if (textLettersArray[i] == letters[j]) {
+            getLetter = letters[j];
+            letterIndex = letters.indexOf(getLetter);
+            if (getLetter != ' ') {
+              let indexCodeLetter = letters.length - (letterIndex+2);
+              let codeLetter = letters[indexCodeLetter];
+              codeArray.push(codeLetter);
+              console.log(codeArray);
+            } else {
+              codeArray.push(getLetter);
+              console.log(codeArray);
+            }
+          }
+        }
+      }
+      codeText = codeArray.join('');
+      document.getElementById("inputCode").value = codeText;
+    }
+  </script>
+  <script>
+    buttonDecode.onclick = function() {
+      let letters = ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я", ' '];
+      let getValueInputCode = document.getElementById("inputDecode").value;
+      let valueInputCodeLower = getValueInputCode.toLowerCase();
+      let textLettersArray = valueInputCodeLower.split('');
+      let codeArray = [];
+      for (let i=0; i<textLettersArray.length; i++) {
+        for (let j=0; j<letters.length; j++) {
+          if (textLettersArray[i] == letters[j]) {
+            getLetter = letters[j];
+            letterIndex = letters.indexOf(getLetter);
+            if (getLetter != ' ') {
+              let indexCodeLetter = letters.length - (letterIndex+2);
+              let codeLetter = letters[indexCodeLetter];
+              codeArray.push(codeLetter);
+              console.log(codeArray);
+            } else {
+              codeArray.push(getLetter);
+              console.log(codeArray);
+            }
+          }
+        }
+      }
+      codeText = codeArray.join('');
+      document.getElementById("inputDecode").value = codeText;
+    }
+  </script>
+  <style>
+    .container {
+      position: relative;
+      width: 40%;
+      margin: 0 auto;
+    }
+    .items__code {
+      display: flex;
+      flex-direction: column;
+      margin-top: 90px;
+      border: 2px solid gray;
+      padding: 30px 5px 30px 5px;
+      box-shadow: 0px 0px 10px 0px gray;
+    }
+    .items__code button {
+      margin-top: 15px;
+      height: 40px;
+      font-size: 1.1em;
+    }
+
+    .items__code input {
+      height: 40px;
+      font-size: 1.3em;
+      padding-left: 10px;
+    }
+  </style>
+</body>
+</html>
